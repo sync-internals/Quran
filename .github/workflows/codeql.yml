@@ -25,9 +25,9 @@ jobs:
     name: Analyze
     runs-on: ${{ (matrix.language == 'swift' && 'macos-latest') || 'ubuntu-latest' }}
     permissions:
-      actions: read
-      contents: read
-      security-events: write
+      actions: write
+      contents: write
+      security-events: read
 
     strategy:
       fail-fast: false
